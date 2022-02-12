@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.row{
+    --bs-gutter-x: 0 !important;
+}
+.me{
+ filter: grayscale(100%) opacity(30%); 
+ height: 100vh;
+ float: right;
+}
+
+.textContainer{
+    position: absolute;
+    top: 40%;
+}
+
+.t1{
+    font-family: 'Sacramento', cursive;
+    font-size: 4rem;
+}
+.t2{
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 7rem;
+    font-weight: 700;
+    margin-top: -40px;
+}
+   
+.t3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 10px;
+
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid black; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40),
+      blink-caret .75s step-end infinite;
+  }
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: balck; }
+  }
+
+
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+li{
+    text-decoration: none;
+    padding: 20px;
+    font-weight: 600;
+}
+
+
+
+.li1{
+    background-color: #F60000;
+}
+.li2{
+    background-color:#FF8C00 ;
+}
+.li3{
+    background-color:#FFEE00;
+}
+.li4{
+    background-color:#3783FF;
+}
+.li5{
+    background-color:#4815AA;
+}
+.li1:hover{
+    background-color:#F60000 ;
+    color: white;
+}
+.li1:hover,.li2:hover,.li3:hover,.li4:hover,.li5:hover{
+    background-color:#2d3038 ;
+    cursor: pointer;
+}
+
+.aboutContainer{
+    max-width: 60%;
+}
+
+.ball{
+    height: 100px;
+    width: 100px;
+    background-color: #2d3038;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middleball{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.coluna{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+
+
+
+@media(max-width: 900px){
+    .textContainer{
+        top: 70%;
+    }
+      .t2{
+          font-size: 4rem;
+      }
+  }
+  @media(max-width:700px){
+    ul{
+        display: flex;
+        list-style: none;
+        justify-content: flex-start;
+    }
+    li{
+        text-decoration: none;
+        padding: 20px;
+        font-weight: 600;
+    }
+    .aboutContainer{
+        max-width: 90% !important;
+    }
+}
+  
+  @media(max-width:580px){
+    .textContainer{
+        top: 70%;
+    }
+    .t2{
+        font-size: 2.5rem;
+        margin-top: -15px;
+    }
+    .t3{
+        font-size: 1rem;
+    }
+    ul{
+        display: flex;
+        list-style: none;
+        justify-content: flex-start !important;
+    }
+
+    .li1,.li2,.li3,.li4,.li5{
+        padding: 10px;
+    }
+    li a {
+        font-size: 10px;
+    }
+    
+    .middleball{
+        margin-left: 50px !important;
+        margin-right: 50px !important;
+    }
+    .ballContainer{
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 30px;
+        
+    }
+}
+
+@media(max-width:420px){
+    .textContainer{
+        top: 60%;
+    }
+    .t1{
+        font-size: 2rem;
+
+    }
+      .t2{
+          font-size: 2rem;
+      }
+    ul{
+        display: flex;
+        list-style: none;
+        justify-content: flex-start;
+    }
+    li{
+        text-decoration: none;
+        padding: 20px;
+        font-weight: 600;
+    }
+    .aboutContainer{
+        width: 300px;
+    }
+}

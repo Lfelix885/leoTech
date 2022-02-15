@@ -206,6 +206,9 @@ li{
         width: 90vw;
         display: grid !important;
     }
+    h4{
+        font-size: 16px;
+    }
     
 }
 
@@ -232,6 +235,14 @@ li{
     }
     .aboutContainer{
         width: 300px;
+    }
+    
+    .skillBar{
+        width: 80vw;
+        display: grid !important;
+    }
+    h4{
+        font-size: 12px;
     }
 }
 
